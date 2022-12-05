@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 
         System.out.println("\n--- Pasando un int");
         int entero = 1;
@@ -25,10 +26,33 @@ public class Main {
         Clase objeto2 = new Clase(1, "string1");
         modificaContenidoObjeto(objeto2); // pasamos la referencia al objeto
         System.out.println("Valor del objeto fuera del método: " + objeto2);
+=======
+        System.out.println("Hello world!");
+        int entero = 1;
+        String string = "string1";
+
+        modificaInt(entero);
+        System.out.println(entero);
+
+        modificaString(string);
+        System.out.println(string);
+>>>>>>> 7798538ff86bd13f2dfc9dc7402d60205479ca82
 
         Clase objeto = new Clase(1, "string1");
         objeto.modificaObjeto(-99, "string modificado");
         System.out.println(objeto);
+<<<<<<< HEAD
+=======
+
+    }
+
+    private static void modificaString(String a) {
+        a = "string2";
+    }
+
+    private static void modificaInt(int a) {
+        a = -99;
+>>>>>>> 7798538ff86bd13f2dfc9dc7402d60205479ca82
     }
 
     private static void modificaVarInt(int a) {
